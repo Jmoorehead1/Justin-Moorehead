@@ -20,7 +20,14 @@ int run()
     // Write your code here
 
     cout << STUDENT << " starter code." << endl;
-    cout << "[1, 1]" << endl;
+
+    cout << "Enter ounces per box of cereal: ";
+    double ouncesPerBox;
+    cin >> ouncesPerBox;
+    double weightInTons = ouncesPerBox / 35273.92;
+    double boxesPerTon = 1 / weightInTons;
+
+    cout << "[" << weightInTons << ", " << boxesPerTon << "]" << endl;
 
     return 0;
 }
